@@ -1,16 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class XRController : MonoBehaviour
 {
     public static XRController instance;
 
-    public OVRPassthroughLayer passthroughLayer;
-    public PassThoroughState pState = PassThoroughState.none;
-    public GameObject _enviroments;
 
-   public OVRCameraRig ovrCameraRig;
+    public OVRPassthroughLayer passthroughLayer;
+
+    public PassThoroughState pState = PassThoroughState.none;
+
+    public GameObject _enviroments;
+    public OVRCameraRig ovrCameraRig;
     
     private void Awake()
     {
@@ -51,6 +55,8 @@ public class XRController : MonoBehaviour
                     // Set camera background to transparent
                     centerCamera.clearFlags = CameraClearFlags.SolidColor;
                 }
+
+              
                 break;
         }
     }
