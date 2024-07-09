@@ -93,7 +93,7 @@ public class BezierPointEditor : Editor {
 	{
 		
 		Handles.color = Color.green;
-		var fmh_96_64_638561361071706312 = point.transform.rotation; Vector3 newPosition = Handles.FreeMoveHandle(point.position, HandleUtility.GetHandleSize(point.position)*0.2f, Vector3.zero, Handles.CubeHandleCap);
+		var fmh_96_64_638561376526447599 = point.transform.rotation; Vector3 newPosition = Handles.FreeMoveHandle(point.position, HandleUtility.GetHandleSize(point.position)*0.2f, Vector3.zero, Handles.CubeHandleCap);
 		if(point.position != newPosition) point.position = newPosition;
 		
 		handlers[(int)point.handleStyle](point);
@@ -108,7 +108,7 @@ public class BezierPointEditor : Editor {
 	private static void HandleConnected(BezierPoint p){
 		Handles.color = Color.cyan;
 		
-		var fmh_111_64_638561361071727584 = p.transform.rotation; Vector3 newGlobal1 = Handles.FreeMoveHandle(p.globalHandle1, HandleUtility.GetHandleSize(p.globalHandle1)*0.15f, Vector3.zero, Handles.SphereHandleCap);
+		var fmh_111_64_638561376526509830 = p.transform.rotation; Vector3 newGlobal1 = Handles.FreeMoveHandle(p.globalHandle1, HandleUtility.GetHandleSize(p.globalHandle1)*0.15f, Vector3.zero, Handles.SphereHandleCap);
 		
 		if(newGlobal1 != p.globalHandle1){
 			Undo.RegisterUndo(p, "Move Handle");
@@ -116,7 +116,7 @@ public class BezierPointEditor : Editor {
 			p.globalHandle2 = -(newGlobal1 - p.position) + p.position;
 		}
 		
-		var fmh_119_64_638561361071730132 = p.transform.rotation; Vector3 newGlobal2 = Handles.FreeMoveHandle(p.globalHandle2, HandleUtility.GetHandleSize(p.globalHandle2)*0.15f, Vector3.zero, Handles.SphereHandleCap);
+		var fmh_119_64_638561376526513265 = p.transform.rotation; Vector3 newGlobal2 = Handles.FreeMoveHandle(p.globalHandle2, HandleUtility.GetHandleSize(p.globalHandle2)*0.15f, Vector3.zero, Handles.SphereHandleCap);
 		
 		if(newGlobal2 != p.globalHandle2){
 			Undo.RegisterUndo(p, "Move Handle");
@@ -128,8 +128,8 @@ public class BezierPointEditor : Editor {
 	private static void HandleBroken(BezierPoint p){
 		Handles.color = Color.cyan;
 
-		var fmh_131_64_638561361071732791 = Quaternion.identity; Vector3 newGlobal1 = Handles.FreeMoveHandle(p.globalHandle1, HandleUtility.GetHandleSize(p.globalHandle1)*0.15f, Vector3.zero, Handles.SphereHandleCap);
-		var fmh_132_64_638561361071734989 = Quaternion.identity; Vector3 newGlobal2 = Handles.FreeMoveHandle(p.globalHandle2, HandleUtility.GetHandleSize(p.globalHandle2)*0.15f, Vector3.zero, Handles.SphereHandleCap);
+		var fmh_131_64_638561376526516125 = Quaternion.identity; Vector3 newGlobal1 = Handles.FreeMoveHandle(p.globalHandle1, HandleUtility.GetHandleSize(p.globalHandle1)*0.15f, Vector3.zero, Handles.SphereHandleCap);
+		var fmh_132_64_638561376526518458 = Quaternion.identity; Vector3 newGlobal2 = Handles.FreeMoveHandle(p.globalHandle2, HandleUtility.GetHandleSize(p.globalHandle2)*0.15f, Vector3.zero, Handles.SphereHandleCap);
 		
 		if(newGlobal1 != p.globalHandle1)
 		{
