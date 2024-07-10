@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Project/_Senes/_vr_with_figma.unity
-    guid: 7b83b000f0693e74c8d8053eaff4748c
+    path: Assets/_Project/_Senes/_vr_scenes_with_passthrough.unity
+    guid: 608efa80a8b3269449725e965b5c9b1f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5361efa23c1e8204ab716ee735c0abfa, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a55160e4cd7d6a243b872c659b04db1d, type: 2}
