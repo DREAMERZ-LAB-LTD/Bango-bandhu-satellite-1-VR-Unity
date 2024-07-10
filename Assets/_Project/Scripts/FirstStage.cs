@@ -25,7 +25,7 @@ public class FirstStage : EjectionStage
     }
 
 
-    public override void ExecuteOperation()
+    protected override void ExecuteOperation()
     {
         
         transform.DORotate(rotaton * releseAngle, first_ejection_time, RotateMode.FastBeyond360).SetEase(rotatonEase).SetDelay(carvePathDellay).OnComplete(() => {

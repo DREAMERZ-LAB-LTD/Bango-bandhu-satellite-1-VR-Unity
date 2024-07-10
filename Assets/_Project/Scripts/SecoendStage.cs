@@ -24,13 +24,13 @@ public class SecoendStage : EjectionStage
     {
         ExecuteOperation();
     }
-    public override void ExecuteOperation()
+    protected override void ExecuteOperation()
     {
         this.transform.parent = null;
         Transform temp = firstStageReturn.transform.parent;
         firstStageReturn.parent = null;
         temp.gameObject.SetActive(false);
-        transform.DORotate(rotaton * releseAngle, secoendStageDuration, RotateMode.FastBeyond360).SetEase(rotatonEase).OnComplete(Start3rdStage);
+        transform.DORotate(rotaton * releseAngle, secoendStageDuration, RotateMode.FastBeyond360).SetEase(rotatonEase).OnComplete(StartThirdStage);
 
     }
 
@@ -41,11 +41,12 @@ public class SecoendStage : EjectionStage
         transform.DOLocalMove(transform.position + transform.up * Time.deltaTime * speed, Time.deltaTime, false).SetEase(launchEase);
     }
 
-    public void StopMovement() 
+    public void StopSecoendStage() 
     {
          sataliteRelise = true;
+         enabled = false;
     }
-    private void Start3rdStage()
+    private void StartThirdStage()
     {        
         if(nextejection != null)
             nextejection.enabled = true;
