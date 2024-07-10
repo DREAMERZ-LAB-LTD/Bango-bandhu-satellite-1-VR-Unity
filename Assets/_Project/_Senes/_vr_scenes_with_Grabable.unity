@@ -148,11 +148,10 @@ Transform:
   m_GameObject: {fileID: 87897211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.978, y: 0.458, z: -0}
+  m_LocalPosition: {x: 0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6398970224978516585}
+  m_Children: []
   m_Father: {fileID: 673156422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &110601604 stripped
@@ -379,6 +378,443 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673156421}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &720057365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 426686233237840983, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_Name
+      value: Grabe able canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91924727
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09848502
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.37983307
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.031812042
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 11.843
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 576047072562948265, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.956
+      objectReference: {fileID: 0}
+    - target: {fileID: 604861054638084378, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_text
+      value: 'Bangabandhu satellite 1 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 604861054638084378, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 604861054638084378, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 1004368761926834947, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004368761926834947, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004368761926834947, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281272699793329816, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491363035386871707, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.022500005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491363035386871707, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.027500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491363035386871707, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000000047683715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578611187747168188, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.022500005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578611187747168188, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578611187747168188, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0000000047683715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883178715283873487, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245730362029903515, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0225
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245730362029903515, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.027499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245730362029903515, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000000014305114
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 368
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 38.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 184
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358912708855966300, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -205
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674415230227536790, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3614607663878272062, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904666583611931055, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357150008290893632, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_text
+      value: "Bangabandhu 1 (BD-1), the first geostationary communications satellite
+        of Bangladesh, was developed by the Bangladesh Telecommunication Regulatory
+        Commission (BTRC). The satellite was launched into geostationary earth orbit
+        (GEO) in May 2018.\r\n\r\nLocated at 119.1\xB0E longitude orbital position,
+        Bangabandhu 1 provides broadcasting and telecommunication services to rural
+        areas in Bangladesh. It also supports profitable services, including direct-to-home
+        (DTH) services.\r\n\r\nIt offers Ku-band and C-band services across Bangladesh
+        and its territorial waters of the Bay of Bengal, India, Nepal, Bhutan, Sri
+        Lanka, the Philippines, and Indonesia.\r\n\r\nThe satellite enables the nation
+        to save approximately BDT1.08bn ($14m) spent on satellite rents a year. BTRC
+        also plans to launch follow-on series of BD-2 and BD-3 satellites in phases.\n\nBangabandhu
+        satellite 1 design and development\r\nBased on the Spacebus 4000B2 platform
+        developed by Thales Alenia Space, the Bangabandhu satellite has a launch
+        mass of 3,500kg. It includes two deployable solar arrays with batteries and
+        has a design lifespan of 15 years.\r\n\r\nThales Alenia Space was selected
+        as the prime contractor to provide turnkey systems, including design, production,
+        and testing services for the BD-1 satellites, in November 2015. The contractual
+        scope also includes the development of the ground segment.\r\n\r\nBD-1 satellite\u2019s
+        communications module integration work was carried out at Thales Alenia Space\u2019s
+        plant located in Toulouse, France.\r\n\r\nThe critical design review (CDR)
+        of BD-1 satellite was completed in January 2017. The service module for the
+        satellite was manufactured at Cannes and satellite mating was completed in
+        March 2017.\r\n\r\nThales Alenia Space Belgium, Thales Alenia Space Italia
+        and Thales Alenia Space Espa\xF1a were also involved in the development of
+        the satellite and its ground components.\r\n\r\nBangabandhu satellite communication
+        capabilities\r\nThe Bangabandhu satellite is fitted with 26 Ku-Band and 14
+        C-Band transponders. The major applications of the spacecraft include DTH,
+        very small aperture terminal (VSAT) communications, backhaul and trunking,
+        network restoration, and disaster preparedness and relief.\n\nFinancing for
+        Bangabandhu satellite 1\r\nThe development of the BD-1 satellite was completed
+        at a cost of $248m. The Bangladeshi Executive Committee of the National Economic
+        Council (ECNEC) approved $37.58m in funding for the development of the country\u2019s
+        first satellite in September 2014.\r\n\r\nHong Kong and Shanghai Banking
+        Corporation (HSBC) provided $17.46m for the construction of the BD-1 and
+        its ground equipment."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357150008290893632, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4357150008290893632, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357150008290893632, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4950339799463571859, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950339799463571859, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 4cfc7c2e9379c8a46b214797a9525b7e, type: 3}
+    - target: {fileID: 5506676662420709798, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.022499993
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506676662420709798, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506676662420709798, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0000000047683715
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511364646717746424, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 38.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 343
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515275606492505386, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022408093103395825, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164006674080068450, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206638839421822322, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470382534052317594, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8090986101856902110, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_Size
+      value: 0.22712992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341542192839323316, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4940575845876656445, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+    - {fileID: 3602621210359861439, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 426686233237840983, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 720057368}
+    - targetCorrespondingSourceObject: {fileID: 426686233237840983, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 720057367}
+  m_SourcePrefab: {fileID: 100100000, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+--- !u!1 &720057366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 426686233237840983, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+  m_PrefabInstance: {fileID: 720057365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &720057367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720057366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0c762577e02b24d9caca3baef0a3ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundIcon: {fileID: 720057370}
+  _muteIcon: {fileID: 720057369}
+--- !u!114 &720057368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720057366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43842246db63a4c4aad3e9ed44c03b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Title: {fileID: 0}
+  _Description: {fileID: 0}
+  PipUp: {fileID: 0}
+  audioSource: {fileID: 0}
+  _panelImage: {fileID: 0}
+--- !u!1 &720057369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7488115084865778151, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+  m_PrefabInstance: {fileID: 720057365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &720057370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7683813164879047644, guid: 5c6a7b094d857164d83a334c0bd0f24f, type: 3}
+  m_PrefabInstance: {fileID: 720057365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &723767858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +2373,55 @@ MonoBehaviour:
   clockwise: 1
   direction: 1
   directionChangeSpeed: 2
+--- !u!1 &2142025401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142025403}
+  - component: {fileID: 2142025402}
+  m_Layer: 0
+  m_Name: Sattellite_Target_Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2142025402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142025401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9444edcd054a04da8e44af4f58feeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 87897212}
+  lockTarget: {fileID: 673156422}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 0.5, z: 0}
+--- !u!4 &2142025403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142025401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6398970224978516585}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &44170399669304362
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20749,7 +21234,7 @@ Transform:
   - {fileID: 2561067716610865171}
   - {fileID: 4172329912297446814}
   - {fileID: 7261689405800116196}
-  m_Father: {fileID: 87897212}
+  m_Father: {fileID: 2142025403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6403466289229038709
 GameObject:
@@ -29156,3 +29641,5 @@ SceneRoots:
   - {fileID: 7288911013376709310}
   - {fileID: 1794638299}
   - {fileID: 1609575128}
+  - {fileID: 2142025403}
+  - {fileID: 720057365}
