@@ -20,6 +20,9 @@ public class SecoendStage : EjectionStage
     [SerializeField] float secoendStageDuration = 10f;
     [SerializeField] float releseAngle = 90f;
 
+    //partical
+    [SerializeField] ParticleSystem particleSystem;
+
     private void OnEnable()
     {
         ExecuteOperation();
@@ -30,6 +33,7 @@ public class SecoendStage : EjectionStage
         Transform temp = firstStageReturn.transform.parent;
         firstStageReturn.parent = null;
         temp.gameObject.SetActive(false);
+        particleSystem.Play();
         transform.DORotate(rotaton * releseAngle, secoendStageDuration, RotateMode.FastBeyond360).SetEase(rotatonEase).OnComplete(StartThirdStage);
 
     }
@@ -45,12 +49,12 @@ public class SecoendStage : EjectionStage
     {
          sataliteRelise = true;
          enabled = false;
+        particleSystem.Stop();
     }
     private void StartThirdStage()
     {        
         if(nextejection != null)
             nextejection.enabled = true;
-
     }
 
 }

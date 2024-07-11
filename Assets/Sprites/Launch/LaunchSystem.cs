@@ -16,9 +16,13 @@ public class LaunchSystem : MonoBehaviour
     private void Launch()
     {
         
+        Invoke(nameof(LaunchSmoke), 1f);
         transform.DOMoveY(transform.position.y + 1000f, speed, false).SetEase(Ease.InSine).SetSpeedBased();
-        Invoke(nameof(LaunchSmoke), 0.5f);
     }
 
-    private void LaunchSmoke() { smoke.SetActive(true);}
+    private void LaunchSmoke() 
+    { 
+        smoke.SetActive(true);
+    
+    }
 }

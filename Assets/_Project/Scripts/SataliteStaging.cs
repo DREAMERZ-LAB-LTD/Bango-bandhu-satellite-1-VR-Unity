@@ -9,19 +9,25 @@ public class SataliteStaging : EjectionStage
     [SerializeField] float scaleupTime = 5f, speed = 5, dellay = 3;
     [SerializeField] bool OnStage = false;
     [SerializeField] Transform earth, satalite;
+    [SerializeField] SkinnedMeshRenderer ray;
+    [SerializeField] float rayScale = 1f;
     protected override void ExecuteOperation()
     {
         // invock after 3rd stage complete;
         transform.parent = null;
         satalite.DORotate(Vector3.zero, dellay).OnComplete(() =>
         {
-            transform.DOScale(Vector3.one, scaleupTime).OnComplete(() =>
+            satalite.DOScale(Vector3.one, scaleupTime).OnComplete(() =>
             {
                 //start ray
                 leftwing.SetBool("True", true);
                 rightwing.SetBool("True", true);
                 OnStage = true;
-                satalite.DOLookAt(earth.position, dellay);
+                satalite.DOLookAt(Vector3.zero, dellay).OnComplete(() => {
+
+                    ray.transform.DOScale(Vector3.one * rayScale, dellay);
+;                }
+                );
             });
         }).SetEase(Ease.Linear);
         
