@@ -2,17 +2,19 @@ using DA_Assets.Shared;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SecoendFalconMangaer : MonoBehaviour
 {
-    [SerializeField] Transform earth, stage1, stage2, stage3, satalite, ray, particals;
+    [SerializeField] Transform earth, stage1, stage2, stage3, satalite, ray, particals, falconLandingPositon;
     [SerializeField] ParticleSystem stage2_partical;
     [SerializeField] float totalTime = 30f;
     [SerializeField] float stage1time, stage2time, stage3time, sataliteStageTime, raytime, fallbacktime, rayScale;
     [SerializeField] Transform stage3_left, stage3_right;
     [SerializeField] Animator fh_open, leftwing, rightwing;
-
+    [SerializeField] int nextScene;
     private void Start()
     {
         particals.gameObject.SetActive(true);
@@ -85,9 +87,17 @@ public class SecoendFalconMangaer : MonoBehaviour
                 particals.gameObject.SetActive(false);
             });
         }
-        t.DOJump(Vector3.zero, 10f, 1, fallbacktime, false).OnComplete(() => { t.gameObject.SetActive(false); }).OnComplete(() => {
+        t.DOJump(falconLandingPositon.position, 10f, 1, fallbacktime, false).OnComplete(() => { t.gameObject.SetActive(false); }).OnComplete(() => {
             t.DOMove(earth.position, 1f);
         });
         t.DOScale(Vector3.zero, fallbacktime);
+    }
+
+
+    ///Loading scene
+    ///
+    public void LoadNextScene() 
+    {
+        SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 }

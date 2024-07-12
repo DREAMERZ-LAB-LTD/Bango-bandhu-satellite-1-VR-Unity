@@ -56,6 +56,7 @@ public class SatelliteScript : MonoBehaviour
         {
 
             MoveToTargetPosition(targetObject.transform);
+           
 
         }
     }
@@ -69,6 +70,8 @@ public class SatelliteScript : MonoBehaviour
             transform.DOKill();
             transform.localEulerAngles = _startRotation;
             transform.localScale = _localScale;
+
+            
         });
     }
 

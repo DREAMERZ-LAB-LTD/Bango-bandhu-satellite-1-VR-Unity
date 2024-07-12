@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SataliteStaging : EjectionStage
@@ -11,6 +12,8 @@ public class SataliteStaging : EjectionStage
     [SerializeField] Transform earth, satalite;
     [SerializeField] SkinnedMeshRenderer ray;
     [SerializeField] float rayScale = 1f;
+
+    
     protected override void ExecuteOperation()
     {
         // invock after 3rd stage complete;
@@ -41,7 +44,7 @@ public class SataliteStaging : EjectionStage
 
     private void OnEnable()
     {
-        ExecuteOperation();   
+        ExecuteOperation();
     }
     private void Update()
     {

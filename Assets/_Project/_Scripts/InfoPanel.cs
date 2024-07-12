@@ -38,7 +38,8 @@ public class InfoPanel : MonoBehaviour
             _targetPlanet = newPlanet;
             _targetPlanet._infoPanel = GetComponent<InfoPanel>();
             _targetPlanet.isStay = true;
-         
+
+
         }
     }
     // Ungroup and  send the planet to it's start orbit position
@@ -48,5 +49,6 @@ public class InfoPanel : MonoBehaviour
         lastPlanet.isStay = false;
         lastPlanet._infoPanel = null;
         lastPlanet = null;
+
     }
 }
