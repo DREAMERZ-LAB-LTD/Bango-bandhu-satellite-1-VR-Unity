@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Eject.unity
     guid: 62d32dc511b1aa9488d8d6581e058946
   - enabled: 1
-    path: Assets/_Project/_Senes/_vr_scenes_with_Grabable.unity
+    path: Assets/Scenes/_vr_scenes_with_Grabable.unity
     guid: 9f5e27a71e990b24fac847d859ae8cde
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5361efa23c1e8204ab716ee735c0abfa, type: 2}

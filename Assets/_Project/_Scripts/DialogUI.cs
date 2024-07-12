@@ -13,10 +13,10 @@ public class DialogUI : MonoBehaviour
     public Image _panelImage;
     private void Start()
     {
-        PipUp.SetActive(true);
+        //PipUp.SetActive(true);
        // SolarController.instance.OnSolarEventTriggered += DisplayInfo;
-        _Title.text = "";
-        _Description.text = "";
+        /*_Title.text = "";
+        _Description.text = "";*/
     }
     private void OnDisable()
     {
