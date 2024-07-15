@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class XRController : MonoBehaviour
 {
@@ -12,10 +14,13 @@ public class XRController : MonoBehaviour
     public OVRPassthroughLayer passthroughLayer;
 
     public PassThoroughState pState = PassThoroughState.none;
+    public TextMeshProUGUI passTxt;
 
     public GameObject _enviroments;
     public OVRCameraRig ovrCameraRig;
-    
+
+    [SerializeField] int nextScene;
+
     private void Awake()
     {
         if(instance == null)
@@ -46,6 +51,7 @@ public class XRController : MonoBehaviour
                 _enviroments.SetActive(true);
                 passthroughLayer.enabled = false;
                 centerCamera.clearFlags = CameraClearFlags.Skybox;
+                passTxt.text = "Off";
                 break;
             case PassThoroughState.passthrough:
                 _enviroments.SetActive(false);
@@ -54,6 +60,7 @@ public class XRController : MonoBehaviour
                     passthroughLayer.enabled = true;
                     // Set camera background to transparent
                     centerCamera.clearFlags = CameraClearFlags.SolidColor;
+                    passTxt.text = "On";
                 }
 
               
@@ -73,6 +80,11 @@ public class XRController : MonoBehaviour
 
 
         ChangePassthroughState();
+    }
+
+    public void ReturnLaunch()
+    {
+        SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 
 }
