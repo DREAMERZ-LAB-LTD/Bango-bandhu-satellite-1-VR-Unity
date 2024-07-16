@@ -26,8 +26,8 @@ public class SataliteRayAndAniamtonControler : MonoBehaviour
     }
     void Start()
     {
-        Invoke(nameof(StartAniation), 3f);
-        Invoke(nameof(StartRay), 5);
+        Invoke(nameof(StartAniation), 1f);
+        Invoke(nameof(StartRay), 2);
     }
 
     private void StartAniation() 
