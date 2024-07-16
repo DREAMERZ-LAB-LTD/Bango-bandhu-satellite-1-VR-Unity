@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class SecoendFalconMangaer : MonoBehaviour
 {
+    [SerializeField] Transform rokect;
+    [SerializeField] Transform rokectEndPoint;
     [SerializeField] Transform earth, stage1, stage2, stage3, satalite, ray, particals, falconLandingPositon;
     [SerializeField] ParticleSystem stage2_partical;
     [SerializeField] float totalTime = 30f;
@@ -18,8 +20,8 @@ public class SecoendFalconMangaer : MonoBehaviour
     private void Start()
     {
         particals.gameObject.SetActive(true);
-        earth.DORotate(new Vector3(0f, 109.599991f, -0f), totalTime, RotateMode.Fast).SetEase(Ease.Linear);
-        earth.DOScale(Vector3.one*5f, stage1time+stage2time).SetEase(Ease.Linear);
+        earth.DORotate(new Vector3(188.898f, -449.217f, -156.567f), totalTime, RotateMode.Fast).SetEase(Ease.Linear);
+        rokect.DOScale(Vector3.one*3f, stage1time+stage2time).SetEase(Ease.Linear);
 
         Invoke(nameof(Stage1), stage1time);
 
@@ -27,11 +29,11 @@ public class SecoendFalconMangaer : MonoBehaviour
     }
     private void Stage1() 
     {
-        stage2.parent = null;
+        stage2.parent = rokect;
         particals.gameObject.SetActive(false);
-        stage1.DORotate(Vector3.zero, stage1time / 4f, RotateMode.FastBeyond360).SetEase(Ease.OutQuad).OnComplete(() => {
+       /* stage1.DORotate(Vector3.zero, stage1time / 4f, RotateMode.FastBeyond360).SetEase(Ease.OutQuad).OnComplete(() => {
             particals.gameObject.SetActive(true);
-        });
+        });*/
         MoveObjectToEarth(stage1);
 
 
@@ -41,7 +43,7 @@ public class SecoendFalconMangaer : MonoBehaviour
     private void Stage2()
     {
         stage2_partical.Play();
-        stage3.parent = null;
+        stage3.parent = rokect;
         float temp = stage2time;
         DOTween.To(() => temp, x => temp = x, 0f, stage2time).OnComplete(() => { 
             stage2_partical.Stop();
@@ -53,7 +55,7 @@ public class SecoendFalconMangaer : MonoBehaviour
     }
     private void Stage3()
     {
-        satalite.parent = null;
+        satalite.parent = rokect;
         fh_open.SetBool("Value", true);
         float temp = 5;
         DOTween.To(() => temp, x => temp = x, 0f, stage3time).OnComplete(() => 
@@ -77,7 +79,7 @@ public class SecoendFalconMangaer : MonoBehaviour
     {
 
     }
-    private void MoveObjectToEarth(Transform t)
+    private void MoveObjectToEarth(Transform t, float time =3f)
     {
         if (particals.gameObject.activeInHierarchy) 
         {
@@ -87,10 +89,10 @@ public class SecoendFalconMangaer : MonoBehaviour
                 particals.gameObject.SetActive(false);
             });
         }
-        t.DOJump(falconLandingPositon.position, 10f, 1, fallbacktime, false).OnComplete(() => { t.gameObject.SetActive(false); }).OnComplete(() => {
-            t.DOMove(earth.position, 1f);
-        });
-        t.DOScale(Vector3.zero, fallbacktime);
+       // t.DOJump(falconLandingPositon.position, 10f, 1, fallbacktime, false).OnComplete(() => { t.gameObject.SetActive(false); }).OnComplete(() => {
+            t.DOMove(rokectEndPoint.position, time);
+       // });
+        t.DOScale(Vector3.zero, time);
     }
 
 
